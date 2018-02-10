@@ -1,0 +1,31 @@
+{
+  "name": "learngit",
+  "version": "1.0.0",
+  "description": "creating a new branch is quick &simple\r 123\r СС�ĸĶ�",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chester-Chen/learngit.git"
+  },
+  "keywords": [
+    "a",
+    "demo",
+    "project"
+  ],
+  "author": "Chester-Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chester-Chen/learngit/issues"
+  },
+  "homepage": "https://github.com/Chester-Chen/learngit#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "koa": "^2.4.1"
+  }
+}

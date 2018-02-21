@@ -5,5 +5,8 @@ function showPic (whichPic) {
     var text = whichPic.getAttribute("title");
     var description = document.getElementById("description");
     description.firstChild.nodeValue = text;
+}
 
+function popUp (winUrl) {
+    window.open("winUrl", "popup", "width=320, height=480");
 }

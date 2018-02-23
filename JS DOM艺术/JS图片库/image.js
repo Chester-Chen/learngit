@@ -7,6 +7,29 @@ function showPic (whichPic) {
     description.firstChild.nodeValue = text;
 }
 
-function popUp (winUrl) {
-    window.open("winUrl", "popup", "width=320, height=480");
+function prepareGallery() {
+    if (!document.getElementById || !document.getElementsByTagName) return false;
+    if (!document.getElementById("imageGallery")) return false;
+    var gallery = getElementById("imageGallery");
+    var links = gallery.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function () {
+            showPic(this);
+            return false;
+        }
+    }
 }
+
+function addLoadEvent (func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            oldonload();
+            func();
+        }
+    }
+}
+
+addLoadEvent(prepareGallery);

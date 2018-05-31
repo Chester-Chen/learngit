@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快递查询</title>
+        <style>
+            *{margin: 0;padding: 0;}
+            #container{width: 800px;margin: 15px auto;font-size: 20px;font-weight: bolder;}
+            select[id="company"]{width: 200px;height: 30px;font-size: 18px;font-family: "微软雅黑";border-radius: 5px;}
+            #wb{float: left;}
+            input[id="postid"]{margin:10px auto;width: 200px;height: 20px;font-size: 14px;font-family: "微软雅黑";border-radius: 3px;}
+            button[id="cx"]{display: block;width: 56px;height: 26px;background-color:#388bff;color:white;margin: 8px 380px;}
+            ul[id="show"]{list-style: none;width: 500px;height:auto;border:solid 2px #888; border-radius: 8px; }
+            #container ul li p{padding:15px;width:480px;
+                min-height: 50px;font-size:14px;}
+        </style>
+</head>
+<body>
+        <div id="container">
+            <div>
+                <label for="company">快递公司名称</label>
+                <select id="company" name="address">
+                        <option value="yd">韵达</option>
+                        <option value="sf">顺丰速运</option>
+                        <option value="sto">申通快递</option>
+                        <option value="ems">EMS</option>
+                        <option value="yt">圆通速递</option>
+                        <option value="zto">中通快递</option>
+                        <option value="tt">天天快递</option>
+                        <option value="ht">汇通快递</option>
+                        <option value="qf">全峰快递</option>
+                        <option value="db">德邦</option>
+                        <option value="zjs">宅急送</option>
+                </select>
+            </div>
+            <div id="wb">
+                <label for="post">输入快递单号</label>
+                <input type="text" id="postid">
+            </div>
+            <div>
+                <button id="cx">查询</button>
+            </div>
+
+            <ul id="show">
+                <li>
+                    <p>物流信息</p>
+                </li>
+            </ul>
+          
+        </div>
+        <script src="./jquery-3.3.1.min.js"></script>
+        <script src="./kuaidi.js"></script>
+</body>
+</html>

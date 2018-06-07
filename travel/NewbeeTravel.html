@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/Nb.css">
+    <title>travel</title>
+</head>
+<body>
+    <nav class="navbar navbar-default mg-bottom bgColor" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Newbee Travel</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜鸟社区<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">去哪旅行</a></li>
+                        <li><a href="#">菜鸟新闻</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">最新活动</a></li>
+                <li><a href="#">活动介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <!-- pic width:1920px height:1080px -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="./images/gliding.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/mountain.jpg" alt="">
+            </div>
+            <div class="item active">
+                <img src="./images/climbing.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/triper.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/cycling.jpg" alt="">
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- 查询城市信息 -->
+    <div class="new_world">
+        <img src="./images/NewAbout.png" alt="about_pic" width="80px" height="80px" style="margin-bottom:30px">
+        <p>About "Newbee Travel", How much more you want to know! </p>
+    </div>
+    <section class="map-active">
+        <div class="map-bg"></div>
+        <div class="map-ifo">
+            <h1>查找城市活动信息</h1>
+            <p>每个城市有不同的活动信息，请自主查询您所需要了解的城市</p>
+            <form>
+                <div class="select">
+                    <input list="countrys" placeholder="国家"/>
+                    <datalist id="countrys">
+                        <option value="中国"></option>
+                        <option value="日本"></option>
+                        <option value="美国"></option>
+                    </datalist>
+                </div>
+                <div class="select">
+                    <input list="province" placeholder="省"/>
+                    <datalist id="province">
+                        <option value="广东省"></option>
+                        <option value="台湾省"></option>
+                        <option value="福建省"></option>
+                    </datalist>
+                </div>
+                <div class="select">
+                    <input list="city" placeholder="市"/>
+                    <datalist id="city">
+                        <option value="中国"></option>
+                        <option value="日本"></option>
+                        <option value="美国"></option>
+                    </datalist>
+                </div>
+                <div class="search">
+                    <button type="submit" class="select-btn">搜索</button>
+                </div>
+            </form>
+        </div>		
+    </section>
+    <!-- video -->
+    <section class="videoPart">
+        <video id="videoTouch" src="./media/video/travel.mp4" poster="./images/poster.png" width="800px" height="800px" loop="loop">不支持</video>
+        <div class="actives-container">
+            <div class="active-top">
+                <h1><span class="glyphicon glyphicon-tag" style="font-size: 3rem"></span>高空跳伞</h1>
+                <p>高空跳伞运动——跳伞者乘飞机、气球等航空器或其他器械升至高空后跳下，或者从陡峭的山顶、高地上跳下。<br>
+                    在张开降落伞之前和开伞后在空中动作，并利用降落伞减缓下降速度在指定区域安全着陆。</p>
+                <button class="btn btn-info">了解更多</button>
+            </div>
+            <div class="active-bottom">
+                <h1><span class="glyphicon glyphicon-tag" style="font-size: 3rem"></span>死亡飞车</h1>
+                <p>高空跳伞运动——跳伞者乘飞机、气球等航空器或其他器械升至高空后跳下，或者从陡峭的山顶、高地上跳下。<br>
+                在张开降落伞之前和开伞后在空中动作，并利用降落伞减缓下降速度在指定区域安全着陆。</p>
+                <button class="btn btn-info">了解更多</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 城市活动 -->
+    <section>
+        <div class="city-active">
+            <figure>
+                <img src="./images/mutianyu.jpg" alt="mutianyu-pic">
+                <figcaption>
+                    <h1>北京活动</h1>
+                    <p>慕田峪长城</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                <h1>上海活动</h1>
+                    <p>夜上海新景观探索</p>
+                </figcaption>
+                <img src="./images/shanghai.jpg" alt="beijin-pic">
+            </figure>
+            <figure>
+                <img src="./images/shenzhen.jpg" alt="beijin-pic">
+                <figcaption>
+                    <h1>深圳活动</h1>
+                    <p>全新海岸线观点站</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/hongkong.jpg" alt="beijin-pic">
+                <figcaption>
+                    <h1>香港活动</h1>
+                    <p>疯狂迪士尼乐园</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- 五宫格 -->
+    <section class="time-container boxShadow">
+        <div class="time-pic">
+            <img src="./images/timg.jpg" alt="timg-pic" width="100%">
+            <div class="time-pic-txt">
+                <p><span>菜鸟户外</span></p>
+                <h1>TRAVEL</h1>
+            </div>
+        </div>
+        <div class="time-txt">
+            <input type="radio" name="select" id="" class="select1" checked>
+            <div class="time-txt-intro page1">
+                <h1>新世界/<span>01</span></h1>
+                <p>这是第一个新世界新世界是一世界新世界是一个新世界新世界是一个新世界
+                        新世界是一个新世界新世界是一世界新世界是一个新世界</p>
+                <a href="#">更多详情</a>
+            </div>
+            <input type="radio" name="select" id="" class="select2">
+            <div class="time-txt-intro page2">
+                <h1>新世界/<span>02</span></h1>
+                <p>这是第二个新世界新世界是一世界新世界是一个新世界新世界是一个新世界
+                        新世界是一个新世界新世界是一世界新世界是一个新世界</p>
+                <a href="#">更多详情</a>
+            </div>
+            <input type="radio" name="select" id="" class="select3">
+            <div class="time-txt-intro page3">
+                <h1>新世界/<span>03</span></h1> 
+                <p>这是第三个新世界新世界是一世界新世界是一个新世界新世界是一个新世界
+                        新世界是一个新世界新世界是一世界新世界是一个新世界</p>
+                <a href="#">更多详情</a>
+            </div>
+        </div>
+    </section>
+    <section class="love-live boxShadow">
+        <div class="love-left">
+            <p>新时代<br/><span>关于爱生活的我们</span><br/>
+                <a href="#">查看更多</a>
+            </p>
+        </div>
+        <div class="love-mid">
+            <p>新时代<br/><span>关于爱生活的我们</span><br/>
+                <a href="#">查看更多</a>
+            </p>
+        </div>
+        <div class="love-right">
+            <div class="triangle"></div>
+            <img src="./images/travel.jpg" width="100%" alt="travel-pic">
+        </div>
+    </section>
+    <section class="volunteer">
+        <div class="join">
+            <h1>成为我们的菜鸟一员</h1>
+            <p>在社会、工作环境压力下，你又何尝不是一只被束缚自由的鸟，想摆脱吗？想拥有梦想和活力吗？<br/>
+                那就不要犹豫，快来加入我们，改变自己的生活状态</p>
+        </div>
+        <div class="join-content">
+            <ul>
+                <li>
+                    <h2>户外的菜鸟们!!!&nbsp;&nbsp;&nbsp;Look Here!!</h2>
+                    <p>选择安全、专业的户外装备。户外运动是一项对装备有专业要求的运动，前期需投入一定经费。同时要选择适合自己的场地，
+                        如果不是专业的驴友，不要轻易尝试高山、悬崖等专业运动场地。</p>
+                    <a href="">more</a>
+                </li>
+                <li>
+                    <h2>户外装备</h2>
+                    <p>户外装备指的是参加各种探险旅游及户外活动时需要配置的一些设备。目前，
+                        这些装备包括：帐篷、背包、睡袋、防潮垫或气垫、登山绳、岩石钉、 安全带、
+                        上升器、下降器、大小铁锁、绳套、冰镐、岩石锤、小冰镐、冰爪、雪杖、头盔、踏雪板、 高山眼镜、
+                        羽绒衣裤、防风衣裤、毛衣裤、手套、高山靴、袜子、防寒帽、冰锥、雪锥、炊具、炉具、 多功能水壶、
+                        吸管或净水杯、指北针、望远镜、等高线地图或其它资料、防水灯具、各种刀具、登山表、皮肤风衣、速干衣、
+                        水袋包、防水袋等。
+                    </p>
+                    <a href="">more</a>
+                </li>
+                <li>
+                    <h2>更多咨询</h2>
+                    <a href="">more</a>
+                </li>
+            </ul>
+            <form action="" class="form-join">
+                <label id="name">
+                    <input type="text" class="comment-input name">
+                </label>
+                <label id="age">
+                    <input type="text" class="comment-input age">
+                </label>
+                <label id="qq">
+                    <input type="text" class="comment-input qq">
+                </label>
+                <label id="address">
+                    <input type="text" class="comment-input address">
+                </label>
+                <textarea name="" id="form-text" cols="" rows="" placeholder="Why do you wanna to be a volunteer?"></textarea>
+                <button type="submit" class="form-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <h1>联系我们</h1>
+            <p>baby们！！快来加入群聊把！可以方便你了解到我们的动态，也可以闲聊，share旅游事迹等！！</p>
+            <p>QQ: 2630538239</p>
+            <p>QQ群: 2630538239</p>
+            <p>WeChat: 15222893977</p>
+        </div>
+        <div class="contact-img">
+            <img src="./images/qq.jpg" alt="qq-pic">
+            <img src="./images/feixin.jpg" alt="feixin-pic">
+            <img src="./images/weibo.jpg" alt="weibo-pic">
+            <img src="./images/web.jpg" alt="web-pic">
+		</div>
+    </footer>
+    <script src="./script/jquery-3.3.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./script/videoEvent.js"></script>
+    <script src="./script/mouseClick.js"></script>
+</body>
+</html>

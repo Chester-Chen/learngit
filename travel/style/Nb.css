@@ -5,6 +5,22 @@ html {
     box-shadow:0 0 10px rgba(0,0,0,0.8); 
 } 
 /* header  */
+.navbar-header .search {
+	position: relative;
+	float: left;
+	margin: 10px 5px;
+}
+.navbar-header .search input {
+	border-radius: 2px;
+	border: none;
+	background: #f5f4f4;
+}
+.navbar-header .search span {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+}
 .navbar .nav li > a,
 .navbar .navbar-header > a {
     color: #cecacae5; 

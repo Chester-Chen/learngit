@@ -65,7 +65,7 @@
                 position: 'fixed',
                 zIndex: '99999999',
                 color: randomColor(),
-                fontSize: '40px'
+                fontSize: '20px'
             }, d);
             d.innerHTML = getRandomKeyword();
             document.body.appendChild(d);

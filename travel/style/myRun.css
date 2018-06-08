@@ -1,0 +1,89 @@
+html {
+    font-size: 62.5%;
+}
+.boxShadow {
+    box-shadow:0 0 10px rgba(0,0,0,0.8); 
+} 
+/* header  */
+.navbar-header .search {
+	position: relative;
+	float: left;
+	margin: 10px 5px;
+}
+.navbar-header .search input {
+	border-radius: 2px;
+	border: none;
+	background: #f5f4f4;
+}
+.navbar-header .search span {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+}
+.navbar .nav li > a,
+.navbar .navbar-header > a {
+    color: #cecacae5; 
+}
+.navbar .nav .dropdown-menu a {
+	color: #555;
+}
+body .mg-bottom {
+     margin-bottom: 0;
+}
+nav ul li:hover {
+    background-color: #e7e7e7;
+}
+nav .collapse {
+    float: right;
+}
+body .bgColor {
+    background-color: #393D49;
+    border: 0px;
+    border-radius: unset;
+}
+
+/* ad */
+.logo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.logo p {
+   font-size: 20px;
+   color: #c93131c0;
+}
+
+/* 参赛表格 */
+.panel {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* 路线图 */
+.luxian {
+    width: 1170px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+}
+.luxian p {
+    font-size: 30px;
+}
+.luxian hr {
+    margin: 0 0 10px 0;
+    border-color: #393D49;
+    font-weight: bold;
+}
+
+
+/* footer  */
+footer {
+	width: 100%;
+	background: #393D49;
+	color: #cecacae5;
+	text-align: center;
+	padding: 2rem 5rem;
+}
+footer .contact-img img {
+	margin-left: 2rem;
+}

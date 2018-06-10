@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/myRun.css">
+    <link rel="stylesheet" href="../style/login.css">
     <title>myRun</title>
 </head>
 <body>
     <nav class="navbar navbar-default mg-bottom bgColor" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Newbee Travel</a>
+            <a class="navbar-brand" href="../index.html">Newbee Travel</a>
             <div class="search"><input type="text" placeholder="search" style="height: 30px;"><a href="#"><span class="glyphicon glyphicon-search" style="font-size: 2rem;"></span></a></div>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
@@ -41,10 +42,36 @@
                         <li><a href="#">指南三</a></li>
                         <li><a href="#">指南四</a></li>
                     </ul>
-                </li>
+                </li>   
+                <li><a href="./timeline.html">菜鸟事迹</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">登录</a></li>
             </ul>
         </div>
-        </nav>
+    </nav>
+
+  <!-- login框 -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">菜鸟用户</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="login">
+                        <div class="input-box"><input type="text" placeholder="输入您的手机号/邮箱登录"></div>
+                        <div class="input-box"><input type="password" placeholder="输入您的密码，必须包含特殊在字符"></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">SignIn</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="logo">
         <p>wechat联系我吧！</p>

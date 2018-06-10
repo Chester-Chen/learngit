@@ -9,6 +9,7 @@
   "author": "Chester",
   "license": "ISC",
   "dependencies": {
-    "headroom.js": "^0.9.4"
+    "headroom.js": "^0.9.4",
+    "layui-src": "^2.3.0"
   }
 }

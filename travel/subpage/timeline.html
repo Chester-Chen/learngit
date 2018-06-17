@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-default mg-bottom bgColor" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="../index.html">Newbee Travel</a>
+            <a class="navbar-brand" href="../index.html">Newbie Travel</a>
             <div class="search"><input type="text" placeholder="search" style="height: 30px;"><a href="#"><span class="glyphicon glyphicon-search" style="font-size: 2rem;"></span></a></div>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
@@ -78,7 +78,7 @@
     <!-- timeline记录 -->
 
     <ul class="layui-timeline timeline-center">
-        <h1 class="timeline-title">在这里记录下你的点点滴滴</h1>
+        <h1 class="timeline-title" id="replyBox">在这里记录下你的点点滴滴</h1>
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
@@ -149,7 +149,12 @@
             </div>
         </li>
     </ul>
-
+    <hr>
+    <div class="container-comment">
+        <input id="comment-title" class="form-control" type="text" placeholder="添加标题" style="display: block;"/>
+        <textarea id="comment-content" class="form-control" cols="90" rows="20" placeholder="记录您的生活点滴" style="resize: none; overflow: hidden;"></textarea>
+        <button id="btn" class="btn btn-info" style="">submit</button>
+    </div>
     <footer>
         <div class="contact">
             <h1>联系我们</h1>
@@ -170,5 +175,6 @@
     <script src="../node_modules/layui-src/src/layui.js"></script>
     <script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" color="0,0,78" opacity='1' zIndex="-2" count="150"></script>
     <script src="../script/mouseClick.js"></script>
+    <script src="../script/comment.js"></script>
 </body>
 </html>

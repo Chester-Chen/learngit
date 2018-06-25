@@ -3,7 +3,7 @@
         var source = ["www.Baidu.com", "www.Sina.com.cn", 
                       "Github.com", "www.Google.com", "www.tencent.com", "BUG", "www.tjzhic.com",
                       "▄︻┻═┳一", "嘘...大家安静, 我要用TNT写代码了。。。", "www.xxx.com", "www.youzhan.org",
-                      "哎呀呀~~~呀"
+                      "哎呀呀~~~呀","王大人驾到"
                     ];
         window.requestAnimationFrame = (function(){
             return window.requestAnimationFrame ||

@@ -1,0 +1,71 @@
+.banner-wrap {
+    width: 1349px;
+    height: 494px;
+    margin: 0px auto;
+    box-shadow: 0px 2px 8px 0px rgba(7, 17, 27, 0.5);
+    margin-top: 50px;
+}
+.banner-wrap .activity-list {
+    position: relative;
+    display: inline-block;
+    width: 216px;
+    height: 494px;
+    background: #2b333b;
+    top: -59px;
+    
+}
+.banner-wrap .activity-list .activity-item {
+    height: 20%;
+    width: 217px;
+    color: #fff;
+    padding-left: 15px;
+    padding-top: 10px;
+   
+}
+.banner-wrap .activity-list .activity-item h3 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.banner-wrap .activity-list .activity-item p a {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+/* activity--right */
+.banner-wrap .activity-carousel {
+    position: relative;
+    display: inline-block;
+    width: 1129px;
+    left: -4px;
+}
+.banner-wrap .activity-carousel img {
+    width: 1134px;
+    height: 494px;
+}
+
+/* hot-travel */
+.hot-travel {
+    margin: 20px 0;
+    padding: 10px 100px;
+    padding-left: 275px;
+}
+.hot-travel .hot-item {
+    display: inline-block;
+    width: 285px;
+    height: 277px;
+    border: 1px solid #ddd;
+    margin: 5px 10px;
+}
+.hot-travel .hot-item img {
+    width: 284px;
+}
+.hot-travel .hot-item img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.hot-travel .hot-item:hover {
+  transform: translate(0, -5px);
+}
+
+

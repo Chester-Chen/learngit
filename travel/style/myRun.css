@@ -44,14 +44,21 @@ body .bgColor {
 }
 
 /* ad */
+#chat {
+    position: relative;
+}
 .logo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
 }
 .logo p {
    font-size: 20px;
    color: #c93131c0;
+}
+#chat:hover .logo {
+    display: block;
 }
 
 /* 参赛表格 */

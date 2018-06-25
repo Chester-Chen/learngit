@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/myRun.css">
     <link rel="stylesheet" href="../style/login.css">
-    <link rel="stylesheet" href="../node_modules/layui-src/src/css/layui.css">
+    <link rel="stylesheet" href="../node_modules/layui-src/dist/css/layui.css">
     <link rel="stylesheet" href="../style/timeline.css">
-    <title>myRun</title>
+    <link rel="stylesheet" href="../style/fixbar.css">
+    <title>行迹</title>
 </head>
 <body>
     <nav class="navbar navbar-default mg-bottom bgColor" role="navigation">
@@ -23,7 +24,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜鸟社区<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">关于我们</a></li>
-                        <li><a href="#">去哪旅行</a></li>
+                        <li><a href="./gowhere.html">去哪旅行</a></li>
                         <li><a href="#">菜鸟新闻</a></li>
                     </ul>
                 </li>
@@ -74,6 +75,13 @@
             </div>
         </div>
     </div>
+     <!-- 侧边栏 -->
+     <ul class="fixbar">
+        <a href="../wechat/index.html">
+            <li class="layui-icon layui-icon-dialogue" style="font-size: 40px; color: #fff;"></li>
+        </a>
+        <a href="#" id="top"><li class="layui-icon layui-icon-top" style="font-size: 40px; color: #fff;"></li></a>
+    </ul>
 
     <!-- timeline记录 -->
 
@@ -153,7 +161,7 @@
     <div class="container-comment">
         <input id="comment-title" class="form-control" type="text" placeholder="添加标题" style="display: block;"/>
         <textarea id="comment-content" class="form-control" cols="90" rows="20" placeholder="记录您的生活点滴" style="resize: none; overflow: hidden;"></textarea>
-        <button id="btn" class="btn btn-info" style="">submit</button>
+        <button id="btn" class="btn btn-info">submit</button>
     </div>
     <footer>
         <div class="contact">
@@ -162,6 +170,7 @@
             <p>QQ: 2630538239</p>
             <p>QQ群: 2630538239</p>
             <p>WeChat: 15222893977</p>
+            <p>&copy;2018 travel.com  京ICP备 xxxxxx号-xx</p>
         </div>
         <div class="contact-img">
             <img src="../images/qq.jpg" alt="qq-pic">
@@ -176,5 +185,6 @@
     <script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" color="0,0,78" opacity='1' zIndex="-2" count="150"></script>
     <script src="../script/mouseClick.js"></script>
     <script src="../script/comment.js"></script>
+    <script src="../script/fixbar.js"></script>
 </body>
 </html>
